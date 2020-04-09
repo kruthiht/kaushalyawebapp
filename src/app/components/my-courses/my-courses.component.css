@@ -1,0 +1,30 @@
+.panel-default{
+  border-style: solid;
+  border-width: 2px;
+    border-color: #e67300 !important;
+}
+
+.mainPanel{
+    border-color: darkslategrey;
+}
+
+.panelHeaderSize{
+  max-height: 70px;
+}
+
+
+
+.panelBodySize{
+  height: 135px;
+}
+
+ .panel-heading {
+    color: #fff !important;
+    background-color: darkslategrey !important;   
+    
+    }
+    
+.panel-footer {
+    background-color: darkslategrey !important;   
+  }
+

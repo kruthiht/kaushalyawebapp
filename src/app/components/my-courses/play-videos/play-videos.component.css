@@ -1,0 +1,31 @@
+.displayDiv{
+    background-color: lightgray;
+    height:500px;
+    max-width: 100%;
+}
+
+.noDisplay{
+    display:none;
+}
+
+.onHover:hover{
+    background-color: lightblue;
+}
+
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: gray;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,99 @@
+/* imports if any*/
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ');
+
+/*Jumbotron*/
+    /* Remove the jumbotron's default bottom margin */ 
+    .jumbotron {
+	    height: 75px;
+      margin-bottom: 0;
+      padding: 0;
+      background-color: darkslategrey;
+      color: white;
+      border-radius: 0 !important;
+    }
+   
+  @media screen and (max-width: 900px) {
+   .jumbotron {
+      height: 140px;
+
+    }
+  }
+
+  /* for Logo Image*/
+  
+/* logo Section */
+.logoImage{
+    width:65%;
+   
+  }
+  
+  @media screen and (max-width: 900px) {
+     .logoImage {
+        width: 35%;
+      }
+    }
+  
+/* For name*/  
+  .name{
+    font-family: 'Courgette'; 
+    font-size: 42px;
+    color:darkslategrey; 
+  
+  }
+
+  @media screen and (max-width: 900px) {
+    .name {
+       font-size: 30px;
+ 
+     }
+   }
+
+
+   /*For Nav Bar*/
+/* Remove the navbar's default rounded borders and increase the bottom margin */ 
+
+
+
+  .navbar-toggler-icon {
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");}
+
+ 
+   .navbar {
+    background-color: darkslategrey;
+    margin-bottom: 4px; 
+    border-radius: 0;
+   
+
+  }
+
+  .active {
+   color: #f4511e !important;
+   font-weight: bold;
+   font-size: 17px;
+
+  }
+
+  .active.fa {
+    
+    font-size: 23px;
+ 
+   }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: white;
+    
+  }
+
+  /* font awesome icons */
+  .fa{
+    font-size: 20px;;
+    margin-right: 5px;
+  }
+  
+  

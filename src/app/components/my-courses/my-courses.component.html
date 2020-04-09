@@ -1,0 +1,24 @@
+<app-userpage-header></app-userpage-header>
+<h3>Your Courses</h3>
+<div class="row"> 
+<div class="col-sm-6" *ngFor="let courseData of coursesData; let i = index;">
+<div class="panel panel-default mainPanel">
+<div class="panel-heading">
+    <h3>{{this.courseData .courseName}}</h3>
+</div>
+<div class="panel-body">
+<p>{{courseData .description}}</p>
+<p>Duation:{{courseData .duration}}</p>
+
+<div *ngFor="let video of courseData.videos">
+    <p>{{video.name}}</p>
+    <p>{{video.path}}</p>
+</div>
+<button type="button" class="btn btn-info"  (click)="showVideos()">Watch videos</button>
+
+</div>
+
+</div>
+
+</div> 
+</div>

@@ -1,0 +1,17 @@
+<p>play-videos works!</p>
+<div class="displayDiv" [hidden]="hideVideoDiv">
+   <div class="row text-center">
+      
+       <div class=" col-md-12">
+           <br>
+           <span   class="close" title="Close" (click)="hideVideo()">&times;</span>
+           <iframe width="853" height="480" src="https://www.youtube.com/embed/pTv76UR24Y0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<div *ngFor="let video of videos">
+    <div  class="onHover" style="position: relative;" (click)="displayVideo(this.video)"> {{video.name}}</div>
+   
+    
+    <p>{{video.path}}</p>
+</div>

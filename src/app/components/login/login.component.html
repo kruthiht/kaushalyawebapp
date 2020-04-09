@@ -1,0 +1,69 @@
+<app-header></app-header>
+<!-- The Modal (contains the Sign Up form) -->
+<div class="card">
+    <!-- <a href="/"><span   class="close" title="Close">&times;</span></a>  --> 
+  <div id="id02" class="container modal-content">
+  <!-- <span onclick="document.getElementclass="container modal-content"ById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
+   <form [formGroup]="loginForm " (ngSubmit)=loginUser() style="justify-content: center;">
+       
+       
+  
+       <div class="row text-center">
+         <div class="col-sm-offset-1 col-sm-10">
+           <h1>Login</h1>
+           <p>{{message}}.</p>
+         </div>
+        </div>  
+      <br> <br>
+  
+        <div class="row">
+         <div class="col-sm-10">
+           <input type="text" class="form-control" formControlName="email" placeholder="User id (Email)" required>
+         </div>
+        </div>
+  
+        <div class="row" *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty ||loginForm.controls['email'].touched)" class="alert alert-danger">
+          <div class="col-sm-10" *ngIf="loginForm.controls['email'].errors.required">
+             Email is required.
+          </div>
+        </div>
+  
+  
+  
+        
+        <div class="row">
+         <div class="col-sm-10">
+           <input type="password" class="form-control" formControlName="password"  placeholder="Password" required >
+         </div>
+        </div> 
+  
+        <div class="row" *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)" class="alert alert-danger">
+          <div class="col-sm-10" *ngIf="loginForm.controls['password'].errors.required">
+             Password is required.
+          </div>
+        </div>
+  
+        <br>
+  
+        <div class="row ">
+         <div class="col-sm-offset-3 col-sm-7">
+                     <input type="submit" class="btnn btn-info" value="Login" style=" margin-right: 40px;">
+           <!--<input type="button"  class="btnn btn-basic cancelbtn" value="cancel"> -->
+           <a class="btnn btn-info cancelbtn" role="button" href="/home">Cancel</a>
+         </div> 
+       </div><br>
+
+       <div class="row"> 
+        <div class="col-sm-offset-1 col-sm-6"> 
+          <span id="openSignup" > Don't have an account? <a  href="/signup">signup</a></span>
+        </div> 
+        <div class="col-sm-4">    
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </div><br>
+       
+     
+   </form>
+  </div>
+  </div>
+  
